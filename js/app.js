@@ -1,6 +1,6 @@
 'use strict';
 window.onload = () => {
-	// render date
+	// render day/month/year
 	let dayMonthYear = document.querySelector('.date');
 	let date = new Date();
 	let day = date.getDate();
@@ -10,7 +10,7 @@ window.onload = () => {
 	let year = date.getFullYear();
 	console.log(year);
 
-	dayMonthYear.innerHTML = ` Date: <span>  ${day} / ${month} / ${year} </span>`;
+	dayMonthYear.innerHTML = ` Date:  <span> ${day} / ${month} / ${year} </span>`;
 };
 
 function getElement() {
@@ -20,7 +20,7 @@ function getElement() {
 		let list = document.querySelector('#list');
 		let text = document.querySelector('#txt');
 		let li = document.createElement('li');
-
+		li.style.color = 'orange';
 		li.textContent = text.value;
 
 		list.appendChild(li);
