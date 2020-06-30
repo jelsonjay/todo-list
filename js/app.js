@@ -1,4 +1,15 @@
 'use strict';
+window.onload = () => {
+	// render date
+	let dateB = document.querySelector('.date');
+	let date = new Date();
+	let day = date.getDate();
+	console.log(day);
+	let month = date.getMonth();
+	console.log(month);
+	let year = date.getFullYear();
+	console.log(year);
+};
 
 function getElement() {
 	let btn = document.querySelector('#btn');
@@ -12,7 +23,7 @@ function getElement() {
 
 		list.appendChild(li);
 		text.value = '';
-		//text.focus();
+		text.focus();
 	});
 }
 
