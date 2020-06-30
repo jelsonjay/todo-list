@@ -13,6 +13,8 @@ function getElement() {
 		list.appendChild(li);
 		text.value = '';
 		text.focus();
+
+		console.log('test');
 	});
 }
 
