@@ -1,2 +1,2 @@
-# todo-list
- simple TODO list using vanillia javascript & local storage 
+# Todo-List
+### simple TODO list using HTML, CSS & Vanilla JavaScript 
