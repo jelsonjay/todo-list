@@ -1,7 +1,7 @@
 'use strict';
 window.onload = () => {
 	// render date
-	let dateB = document.querySelector('.date');
+	let dayMonthYear = document.querySelector('.date');
 	let date = new Date();
 	let day = date.getDate();
 	console.log(day);
@@ -9,6 +9,8 @@ window.onload = () => {
 	console.log(month);
 	let year = date.getFullYear();
 	console.log(year);
+
+	dayMonthYear.innerHTML = ` Date: <span>  ${day} / ${month} / ${year} </span>`;
 };
 
 function getElement() {

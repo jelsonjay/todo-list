@@ -14,6 +14,21 @@ body {
 
 }
 
+.date {
+    position: absolute;
+    display: flex;
+    top: 5%;
+    right: 5%;
+    font-weight: 900;
+    font-size: 0.9em;
+
+}
+
+.date span {
+    color: chocolate;
+
+}
+
 h1 {
     text-align: center;
     padding: 40px;
